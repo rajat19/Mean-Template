@@ -1,31 +1,38 @@
 # MeanTemplate
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
+Run `ng install -g angular-cli`
+
+## New App
+Run `ng new app-name` for a fresh app folder (Don't use in this folder). 
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Adding Express
+Run `ng install --save express body-parser` to install express.js and body-parser as dependencies.
 
+## Code scaffolding
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
 ## Build
-
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+## Run server
+Run `node server.js` to start runnning server. Navigate to `http://localhost:3000`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Mock data (Optional)
+For mock json for testing, run `npm install --save axios`
 
-## Running end-to-end tests
+## Build angular-app and server together
+Run `ng build && node server.js` or add `"scripts": { "build": "ng build && node server.js" }` in `package.json`
+And then run `ng run build`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+## Creating services
+Run `ng generate service service-name`
 
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Source files
+Check following for any source problems
+1. server.js
+2. src/app/posts
+3. server/routes
